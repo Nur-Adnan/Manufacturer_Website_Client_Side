@@ -1,0 +1,74 @@
+/* eslint-disable eqeqeq */
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
+import unknownImage from '../../../Assets/Images/unknown.jpg';
+
+const SingleReviews = ({ singleReview }) => {
+    const { user, customRating, review } = singleReview;
+    let myIcon;
+    if (customRating == 1) {
+        myIcon = <div className='flex items-center'>
+            <FontAwesomeIcon className='icon-color mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color icon-color-empty mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color icon-color-empty mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color icon-color-empty mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color icon-color-empty mx-1' icon={faStar}></FontAwesomeIcon>
+        </div>
+    }
+    else if (customRating == 2) {
+        myIcon = <div className='flex items-center'> <FontAwesomeIcon className='icon-color mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color icon-color-empty mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color icon-color-empty mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color icon-color-empty mx-1' icon={faStar}></FontAwesomeIcon>
+
+        </div>
+    }
+    else if (customRating == 3) {
+        myIcon = <div className='flex items-center'> <FontAwesomeIcon className='icon-color mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color icon-color-empty mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color icon-color-empty mx-1' icon={faStar}></FontAwesomeIcon>
+        </div>
+    }
+    else if (customRating == 4) {
+        myIcon = <div className='flex items-center'>
+            <FontAwesomeIcon className='icon-color mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color icon-color-empty mx-1' icon={faStar}></FontAwesomeIcon>
+
+        </div>
+    }
+    else if (customRating == 5) {
+        myIcon = <div className='flex items-center'>
+            <FontAwesomeIcon className='icon-color mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color mx-1' icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon className='icon-color mx-1' icon={faStar}></FontAwesomeIcon>
+
+        </div>
+    }
+    return (
+        <div className="card w-80 bg-base-100 shadow-xl h-[420px] mr-0 mx-auto rounded-3xl">
+            <figure className="px-10 pt-10">
+                <img className="w-1/2 rounded-full mx-auto" src={
+                    user?.photoURL ? user?.photoURL : unknownImage
+                } alt={user?.displayName} />
+            </figure>
+            <div className="card-body items-center text-center">
+                <h2 className="card-title">{user?.displayName}</h2>
+                {myIcon}
+                <blockquote title={review} 
+                    className='p-4 mt-3 bg-gray-200 italic border-l-4 rounded-lg text-neutral-600 border-neutral-500 quote w-4/6 mx-auto mb-7'
+                    >{review.slice(0, 50)}
+                </blockquote>
+            </div>
+        </div>
+    );
+};
+export default SingleReviews;

@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+.logo {
+  font-family: "Kaushan Script", cursive;
+}
+nav a {
+  font-size: 18px !important;
+}
+nav a:hover {
+  color: #0f172a !important;
+}
+.nav-item {
+  line-height: 2.1 !important;
+}
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1.2;
+  padding: 0.2rem 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+  nav a:hover {
+    color: #fff !important;
+  }
+}
+/* Google button */
+.google-button {
+  border: 1px solid black;
+  padding: 0 15px;
+}
+/* Shape divider */
+.custom-shape-divider-top-1653207012 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1653207012 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 500px;
+}
+
+.custom-shape-divider-top-1653207012 .shape-fill {
+  fill: #ffffff;
+}
+
+/* Border */
+.custom-border {
+  border-bottom: 10px double #ffffff;
+}
+
+.custom-border-primary {
+  border-bottom: 2px double #0f172a;
+}
+
+/* My Profle  */
+.profile-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.profile-card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.profile-card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.profile-card button:hover,
+.profile-card a:hover {
+  opacity: 0.7;
+}
+
+/* Rating icon */
+.icon-color {
+  color: #f5c60d;
+}
+
+.icon-color-empty {
+  color: rgb(173, 173, 173);
+}
+
+/* Auto Typer */
+.auto-type span {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+  .auto-type span {
+    font-size: 30px;
+  }
+}
+
+.auto-type p {
+  line-height: 1.7;
+  word-spacing: 1px;
+}
+
+/* Portfolio width */
+.custom-width {
+  width: 130%;
+}
+
+@media only screen and (max-width: 600px) {
+  .custom-width {
+    width: 100%;
+  }
+}
+
+/* Not found */
+.error {
+  animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    color: red;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bg-image::before,
+  .bg-image::after,
+  .bg-image-bottom::before,
+  .bg-image-bottom::after {
+    display: none !important;
+  }
+}
+
+.home-slider-image {
+  height: calc(100vh - 146px);
+}
+
+.image-slide-bgOne {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("https://images.pexels.com/photos/162625/grinder-hitachi-power-tool-flexible-162625.jpeg?cs=srgb&dl=pexels-pixabay-162625.jpg&fm=jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 146px);
+}
+
+.image-slide-bgTwo {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+    url("https://images.pexels.com/photos/2381463/pexels-photo-2381463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 146px);
+}
+
+.image-slide-bgThree {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url(https://images.pexels.com/photos/162534/grinder-hitachi-power-tool-flexible-162534.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 146px);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
+.accordion__section {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease;
+}
+
+.accordion:hover,
+.active {
+  background-color: #ccc;
+}
+
+.accordion__title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.accordion__icon {
+  margin-left: auto;
+  transition: transform 0.6s ease;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.accordion__content {
+  background-color: white;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+
+/* Style the accordion content text */
+.accordion__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 18px;
+}
+
+/* loader */
+.loader-h-w {
+  height: calc(100vh - 146px);
+}
