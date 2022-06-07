@@ -12,6 +12,8 @@ It's a Mern-Stack website. Users can access a home page that displays the site's
 - A credit card can be used to purchase a goods.
 - It is possible for the user to leave a review.
 - Profiles are updated by both the user and the administrator.
+- there's a beautiful dashboard for both user and admin.
+- Email password and Social Authentication and password reset system.
 
 ## The following equipment is being utilized up front:
 
