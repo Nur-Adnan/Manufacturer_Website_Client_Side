@@ -1,6 +1,6 @@
 # Live site:- https://assignment-12-ce486.web.app/
-# Client-side code github repository https://github.com/programming-hero-web-course1/manufacturer-website-client-side-NUR01854311260
-# Server-side code github repository:- https://github.com/programming-hero-web-course1/manufacturer-website-server-side-NUR01854311260
+# Client-side code github repository:- https://github.com/Nur-Adnan/Manufacturer_Website_Client_Side
+# Server-side code github repository:- https://github.com/Nur-Adnan/Manufacturer_Website_Server_Side
 
 ## Description:
 It's a Mern-Stack website. Users can access a home page that displays the site's most recent products when they log in. In addition, the user has access to a product path and a button for accessing further items, so they can shop for what they need. It's possible to pay using a credit card. Logging onto the site as an administrator gives you access to all orders and goods. They have the ability to add and remove products. There is no need for them to guess who has paid. Admin can distribute the item once the user has made a payment. A notification appears in the user's My Order Dashboard once the product has been delivered by the administrator. My profile page allows both the administrator and the user to make changes to their personal information.
