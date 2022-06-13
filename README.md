@@ -41,3 +41,8 @@ It's a Mern-Stack website. Users can access a home page that displays the site's
 - Body-Parser
 - Stripe
 
+
+![LinkedIn](https://user-images.githubusercontent.com/56475820/173347096-d833dae2-e67b-4902-8b91-5ecae62f04b6.jpg)
+
+
+
